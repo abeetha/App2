@@ -12,6 +12,7 @@ public class Account {
     private String type;
 
     @OneToOne()
+    @JoinColumn(name = "customer_id")
     private Customer customer;
 
     public Account() {

@@ -12,7 +12,7 @@ public class Customer {
     private String address;
     private double salary;
 
-    @OneToOne()
+    @OneToOne(mappedBy = "customer")
     private Account account;
 
     public Customer() {
